@@ -109,6 +109,28 @@
         crossorigin="anonymous"></script>
 
     <script src="./segment.js"></script>
+
+    <script>
+
+        /***
+         * function description
+         * usage:segment(number) ; number 0-9 , set 7 segment number, 
+         * usage:volume(flag) ; flag true,false , set volume on or off,
+         * usage:dot_only(number) ; number 0-8 , show dot only
+         * usage:dot(flag) ; flag true,false , set dot on or off
+         * 
+         ***/
+
+        $(document).ready(function () {
+            var i = 0;
+            setInterval(function () {
+                segment(i++);
+                volume((i % 2 == 0) ? true : false);
+                dot_only(i % 9 + 1)
+
+            }, 1000);
+        })
+    </script>
 </body>
 
 </html>
