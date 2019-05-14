@@ -191,3 +191,11 @@ body {
 	visibility: hidden;
 	clear: both;
 }
+
+.volume-off{
+	color: #a0a0a0;
+}
+
+.volume-on{
+	color: #212529;
+}
